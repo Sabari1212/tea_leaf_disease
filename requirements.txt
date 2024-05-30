@@ -1,6 +1,6 @@
 streamlit==1.12.0
 numpy==1.22.3
-sciket-learn==1.0.2
+sciket-learn>1.0.2
 opencv-python-headless==4.5.5.62
 tensorflow==2.9.1
 Pillow==9.1.1
