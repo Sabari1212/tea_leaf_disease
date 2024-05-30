@@ -1,17 +1,19 @@
 import streamlit as st
 import numpy as np
+import tensorflow as tf
+
 
 from PIL import Image
 import pickle
-from fastapi import FastAPI,UploadFile,File
-from fastapi.responses import JSONResponse,HTMLResponse
+
 import numpy as np
 from io import BytesIO
 from PIL import Image
 
 # Load your pre-trained model
-with open('tea_model','rb') as f:
-    model=pickle.load(f)
+# with open('tea_model','rb') as f:
+#     model=pickle.load(f)
+model=tf.keras.models.load_model("model2.h5")
 
 def image_to_array(data):
     return np.array(Image.open(BytesIO(data)))
