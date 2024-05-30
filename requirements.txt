@@ -10,4 +10,4 @@ seaborn==0.12.2
 altair==5.0.1
 fastapi==0.103.1
 uvicorn==0.23.0
-pickle
+pickle5==0.0.11
